@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - print the string in the put function
  *
- * Return: Always 0 (Success)
+ * Description: using the main function
+ * this program prints "Programming is like building a multilingual puzzle"
+ * Return: 0
  */
 int main(void)
 {
@@ -13,10 +15,11 @@ int main(void)
 	long long int lli;
 	float f;
 
-	printf("Size of a char: 1 byte(s)\n", (unsigned long)sizeof(c));
-	printf("Size of an int: 4 bytes(s)\n", (unsigned long)sizeof(i));
-	printf("Size of a long int: 8 byte(s)\n", (unsigned long)sizeof(li));
-	printf("Size of a long long int: 8 byte(s)\n", (unsigned long)sizeof(lli));
-	printf("Size of a float: 4 byte(s)\n", (unsigned long)sizeof(f));
+	printf("Size of a char: %ld byte(s)\n", (unsigned long)sizeof(c));
+	printf("Size of an int: %ld bytes(s)\n", (unsigned long)sizeof(i));
+	printf("Size of a long int: %ld byte(s)\n", (unsigned long)sizeof(li));
+	printf("Size of a long long int: %ld byte(s)\n", (unsigned long)sizeof(lli));
+	printf("Size of a float: %ld byte(s)\n", (unsigned long)sizeof(f));
+
 	return (0);
 }
