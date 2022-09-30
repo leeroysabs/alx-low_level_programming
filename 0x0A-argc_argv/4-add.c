@@ -13,18 +13,15 @@
 int check_num(char *str)
 
 {
-	/*Declaring variables*/
 	unsigned int count;
 
 	count = 0;
-	while (count < strlen(str)) /*count string*/
-
+	while (count < strlen(str))
 	{
-		if (!isdigit(str[count])) /*check if str there are digit*/
+		if (!isdigit(str[count]))
 		{
 			return (0);
 		}
-
 		count++;
 	}
 	return (1);
