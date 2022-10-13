@@ -42,9 +42,12 @@ void print_all(const char * const format, ...)
 				str = va_arg(valist, char *), c = 1;
 				if (!str)
 				{
-					printf("%s", str);
+					printf("nil)");
 					break;
-				} i++;
-		}
-		printf("\n"), va_end(valist);
+				}
+				printf("%s", str);
+				break;
+		} i++;
 	}
+	printf("\n"), va_end(valist);
+}
